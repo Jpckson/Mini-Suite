@@ -51,7 +51,7 @@
             <span class="headline">Fixing Windows.<br>One tool at a time.</span>
             <div class="cta">
                 <button class="cta1" id="view-tools">View Tools</button>
-                <button class="cta2">About Us</button>
+                <button class="cta2" id="about-us">About Us</button>
             </div>
             <a href="#tools" class="scroll-arrow" aria-label="Scroll to tools">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -210,6 +210,10 @@
                 document.querySelectorAll('.modal-overlay.open').forEach(closeModal);
             }
         });
+
+        document.getElementById('about-us').addEventListener('click', () => {
+            window.location.href = "/about";
+        })
     </script>
 </body>
 </html>
