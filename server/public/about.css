@@ -1,0 +1,128 @@
+.about-hero {
+    background: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: 3rem 2rem;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    position: relative;
+}
+
+.about-hero .headline {
+    font-size: clamp(3.25rem, 9vw, 7rem);
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+}
+
+.about-intro {
+    max-width: 860px;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #444;
+}
+
+.about-intro a {
+    color: var(--black);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ---------- Q&A ---------- */
+.qa {
+    background: var(--black);
+    color: var(--white);
+    padding: 9rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qa-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.qa-list {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.qa-item {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.qa-item[open] {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.qa-item summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.qa-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.qa-item summary::after {
+    content: "+";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #9a9a9a;
+    transition: transform 0.2s ease, color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.qa-item[open] summary::after {
+    transform: rotate(45deg);
+    color: var(--white);
+}
+
+.qa-item p {
+    padding: 0 0 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #d6d6d6;
+    max-width: 640px;
+}
+
+.qa-item p a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 820px) {
+    .qa {
+        padding: 5rem 1.5rem;
+    }
+
+    .qa-item summary {
+        font-size: 1rem;
+    }
+}

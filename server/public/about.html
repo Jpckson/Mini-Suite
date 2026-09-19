@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Mini Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/about.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Mini Suite logo">
+            Mini Suite
+        </div>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="https://buymeacoffee.com/jpckson">Donate</a>
+            <a href="/about">About</a>
+        </div>
+    </header>
+    <main>
+        <div class="about-hero">
+            <span class="headline">Who we are.</span>
+            <p class="about-intro">
+                My name is Jackson, and Mini Suite is a collection of Windows tools I built out of frustration.
+            </p>
+            <p class="about-intro">
+                I've been making <a href="https://jpk.la">websites</a> for 3+ years, and Mini Suite is where
+                I started branching into software.
+                
+                <br><br>It began with Mini Converter, a tool for quickly converting
+                files between format, something I'd always relied on random websites to do. Then came
+                Mini Compressor, which grew out of wanting to shrink Mini Converter's icons as much as possible.
+                <br><br>As I run into more things I wish Windows just did on its own, I'll add them here.
+            </p>
+            <a href="#qa" class="scroll-arrow" aria-label="Scroll to Q&amp;A">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <section class="qa" id="qa">
+            <h2 class="qa-title">Questions &amp; Answers</h2>
+            <div class="qa-list">
+                <details class="qa-item">
+                    <summary>Is Mini Suite really free?</summary>
+                    <p>
+                        Yes. Every tool is completely free with no ads, no accounts, and no paywalls.
+                        If you'd like to support development, there's a <a href="/donate">Donate</a> page,
+                        but it's entirely optional.
+                    </p>
+                </details>
+                <details class="qa-item">
+                    <summary>Do my files ever get uploaded anywhere?</summary>
+                    <p>
+                        No. Everything runs locally on your machine using open-source libraries.
+                        Your files never leave your computer, and nothing is sent to a server.
+                    </p>
+                </details>
+                <details class="qa-item">
+                    <summary>Do I need admin privileges to install?</summary>
+                    <p>
+                        No. Mini Suite tools install and run without administrator privileges.
+                    </p>
+                </details>
+                <details class="qa-item">
+                    <summary>What operating systems are supported?</summary>
+                    <p>
+                        Windows 10 and Windows 11 are officially supported. The tools may work
+                        on older versions, but your mileage may vary.
+                    </p>
+                </details>
+                <details class="qa-item">
+                    <summary>Are there any file size or count limits?</summary>
+                    <p>
+                        None. There are no size limits, and you can convert or compress multiple
+                        files at a time.
+                    </p>
+                </details>
+                <details class="qa-item">
+                    <summary>Will there be more tools in the future?</summary>
+                    <p>
+                        Absolutely. As I find more things I wish existed natively in Windows,
+                        I'll build them and add them to Mini Suite.
+                    </p>
+                </details>
+                <details class="qa-item">
+                    <summary>How can I report a bug or request a feature?</summary>
+                    <p>
+                        Reach out through my <a href="https://jpk.la">website</a>. I read everything
+                        and appreciate the feedback.
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>&copy;2026 Mini Suite</span>
+    </footer>
+</body>
+</html>

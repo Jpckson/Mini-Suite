@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Mini Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Mini Suite logo">
+            Mini Suite
+        </div>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="https://buymeacoffee.com/jpckson">Donate</a>
+            <a href="/about">About</a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <span class="headline">Fixing Windows.<br>One tool at a time.</span>
+            <div class="cta">
+                <button class="cta1" id="view-tools">View Tools</button>
+                <button class="cta2">About Us</button>
+            </div>
+            <a href="#tools" class="scroll-arrow" aria-label="Scroll to tools">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </div>
+        <div class="tools" id="tools">
+            <div class="tool">
+                <div class="tool-info">
+                    <h1>
+                        <img src="convert.png">
+                        Mini Converter
+                    </h1>
+                    <p>
+                        Most file conversion websites limit your uploads, save your files,
+                        or take forever. Mini Converter uses a minimal open source library
+                        to locally convert your files. It's Speedy, Private, and Unlimited.
+                        Built by a developer who had a problem to solve, not investors to please.
+                    </p>
+                    <div class="tool-buttons">
+                        <a class="download-btn" href="MiniConverter" download>
+                            <span class="win-grid"><span></span><span></span><span></span><span></span></span>
+                            Download
+                        </a>
+                        <button class="learn-btn" data-target="modal-converter">Learn More</button>
+                    </div>
+                    <p class="download-meta">v1.0 · 4.2 MB · Windows 10/11</p>
+                </div>
+                <div class="tool-demo">
+                    <video autoplay loop muted playsinline alt="Mini Converter Demo">
+                      <source src="/convert.mp4" type="video/mp4">
+                    </video>
+                    <span>Real Demo</span>
+                </div>
+            </div>
+            <div class="tool">
+                <div class="tool-demo">
+                    <video autoplay loop muted playsinline alt="Mini Compressor Demo">
+                        <source src="/compress.mp4" type="video/mp4">
+                    </video>
+                    <span>Real Demo</span>
+                </div>
+                <div class="tool-info">
+                    <h1>
+                        <img src="compress.png">
+                        Mini Compress
+                    </h1>
+                    <p>
+                        Mini Compressor uses the reliable open-source libraries to compress images, videos, and audios
+                        locally on your machine. We provide the best experience, without compromising privacy,
+                        integrity, or efficiency. Zero ads. Zero uploads. Zero accounts. Full experience for free.
+                    </p>
+                    <div class="tool-buttons">
+                        <a class="download-btn" href="https://github.com/YOUR_USER/YOUR_REPO/releases/latest/download/MiniCompressSetup.exe" download>
+                            <span class="win-grid"><span></span><span></span><span></span><span></span></span>
+                            Download
+                        </a>
+                        <button class="learn-btn" data-target="modal-compress">Learn More</button>
+                    </div>
+                    <p class="download-meta">v1.0 · 3.8 MB · Windows 10/11</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="modal-converter">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-converter-title">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="modal-converter-title">Mini Converter</h2>
+            <ul>
+                <strong>Features:</strong>
+                <li>No uploads.</li>
+                <li>No watermarks.</li>
+                <li>No admin privileges.</li>
+                <li>No size limits.</li>
+                <li>Converts multiple files at a time.</li>
+                <br>
+                <strong>Supported formats:</strong>
+                <li>JPG, JPEG, PNG, BMP, WEBP, TIFF, AVIF, ICO</li>
+                <li>MP3, WAV, FLAC, AAC, OGG, M4A</li>
+                <li>MP4, MKV, AVI, MOV, WEBM</li>
+                <br>
+                <strong>Supported hardware:</strong>
+                <li>Windows 10</li>
+                <li>Windows 11</li>
+                <li>Mileage may vary with older versions...</li>
+                <br>
+                <strong>Depencies:</strong>
+                <li>FFMPEG Essentials (a757b708ae)</li>
+                <br>
+                <p>By downloading, you accept our <a href="/tos">Terms of Service</a></p>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-compress">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-compress-title">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="modal-compress-title">Mini Compress</h2>
+            <ul>
+                <strong>Features:</strong>
+                <li>No uploads.</li>
+                <li>No watermarks.</li>
+                <li>No admin privileges.</li>
+                <li>No size limits.</li>
+                <li>Converts multiple files at a time.</li>
+                <br>
+                <strong>Supported formats:</strong>
+                <li>JPG, JPEG, PNG, BMP, WEBP, TIFF, AVIF</li>
+                <li>MP3, WAV, FLAC, AAC, OGG, M4A</li>
+                <li>MP4, MKV, AVI, MOV, WEBM</li>
+                <br>
+                <strong>Supported hardware:</strong>
+                <li>Windows 10</li>
+                <li>Windows 11</li>
+                <li>Mileage may vary with older versions...</li>
+                <br>
+                <strong>Depencies:</strong>
+                <li>FFMPEG Essentials (a757b708ae)</li>
+                <li>pngquant (3.0.3)</li>
+                <br>
+                <p>By downloading, you accept our <a href="/tos">Terms of Service</a></p>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <span>©2026 Mini Suite</span>
+    </footer>
+    <script>
+        document.getElementById('view-tools').addEventListener('click', function () {
+            document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('video').forEach(v => v.playbackRate = 0.3);
+
+        function closeModal(overlay) {
+            overlay.classList.remove('open');
+        }
+
+        document.querySelectorAll('.learn-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const overlay = document.getElementById(btn.dataset.target);
+                if (overlay) overlay.classList.add('open');
+            });
+        });
+
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.querySelector('.modal-close').addEventListener('click', () => closeModal(overlay));
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) closeModal(overlay);
+            });
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.open').forEach(closeModal);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "private": true,
+  "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^5.2.1"
+  }
+}
