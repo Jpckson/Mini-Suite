@@ -4,7 +4,7 @@
 
 A collection of free, private, open-source-powered Windows tools that run entirely on your machine. No uploads, no ads, no accounts, no paywalls.
 
-Built by [Jackson](https://jpk.la) out of frustration with bloated web tools that limit uploads, save your files, and make you wait.
+Built out of frustration with bloated web tools that limit uploads, save your files, and make you wait.
 
 ---
 
